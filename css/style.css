@@ -1,0 +1,426 @@
+/*ヘッダー部分*/
+a {
+  text-decoration: none;
+  color: grey;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 30px;
+}
+.header-logo {
+  width: 100px;
+  height: auto;
+}
+.header-nav-list {
+  display: flex;
+}
+.header-nav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+/*トップイメージ部分*/
+.top {
+  position: relative;
+}
+.top-img {
+  margin: 0 0 0 auto;
+  display: block;
+  width: 60%;
+}
+.top-ttl {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  font-size: 70px;
+  color: #c71585;
+  font-family: "Indie Flower", cursive;
+}
+.ttl-span {
+  color: #20b2aa;
+}
+.top-content {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  font-size: 24px;
+  font-weight: bold;
+  color: #c71585;
+}
+.top-content2 {
+  position: absolute;
+  top: 55%;
+  left: 20%;
+  color: grey;
+  font-size: 18px;
+}
+
+/*ニュース部分*/
+.news-title {
+  margin-left: 20%;
+  padding-top: 24px;
+}
+.news-ttl {
+  font-size: 20px;
+  font-family: "Indie Flower", cursive;
+  color: #c71585;
+}
+.news-ttl2 {
+  padding-top: 5px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  color: grey;
+  border-bottom: 2px solid grey;
+  width: 75%;
+}
+.news-item {
+  display: block;
+  padding: 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.news-content {
+  width: 60%;
+  border-bottom: 1px solid grey;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: grey;
+  margin-left: 300px;
+}
+.news-span {
+  border-radius: 15px;
+  margin: 3px 3px 20px 20px;
+  padding: 8px 20px;
+  width: 60px;
+  display: inline-block;
+  text-align: center;
+  background: #c71585;
+  color: white;
+  font-size: 14px;
+  margin-left: 40px;
+  margin-right: 30px;
+}
+.news-line {
+  border-bottom: 2px solid grey;
+  width: 60%;
+  margin: 20px auto 40px auto;
+}
+
+/*About部分*/
+.third {
+  background: #dcdcdc;
+}
+.about-ttl1 {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  font-size: 20px;
+  font-family: "Indie Flower", cursive;
+  color: #c71585;
+}
+.about-ttl2 {
+  text-align: center;
+  font-size: 24px;
+  color: grey;
+}
+.about-content {
+  display: flex;
+}
+.about-img {
+  display: inline-block;
+  width: 30%;
+  margin: 20px 200px 20px auto;
+}
+.about-p {
+  display: inline-block;
+  margin: 60px auto 20px 200px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: grey;
+  font-weight: bold;
+  padding: 5px;
+}
+
+/*サービス部分*/
+.service-ttl1 {
+  margin: 20px auto 0 300px;
+  font-size: 20px;
+  font-family: "Indie Flower", cursive;
+  color: #c71585;
+}
+.service-ttl2 {
+  margin: 8px auto 0 300px;
+  font-size: 24px;
+  color: grey;
+}
+.service-content {
+  display: grid;
+  grid-template-rows: 30px 200px 200px 50px;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+.sc-item1 {
+  background: #c71585;
+  grid-row: 2/4;
+  grid-column: 2/3;
+  display: inline-grid;
+}
+.sc-item2 {
+  background: #db7093;
+  grid-row: 2/3;
+  grid-column: 3/4;
+  display: inline-grid;
+}
+.sc-item3 {
+  background: #dda0dd;
+  grid-row: 3/4;
+  grid-column: 3/4;
+  display: inline-grid;
+}
+.sc-img {
+  width: 30%;
+  margin-left: 170px;
+  margin-top: 5px;
+}
+.sc-h3 {
+  color: white;
+  width: 30%;
+  margin-left: 200px;
+}
+.sc-p {
+  color: white;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+.sc-img2 {
+  width: 30%;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.sc-h3-2 {
+  color: white;
+  width: 40%;
+  margin-top: -100px;
+  margin-left: 200px;
+}
+.sc-p-2 {
+  color: white;
+  width: 55%;
+  margin-top: -90px;
+  margin-left: 180px;
+  line-height: 1.5;
+}
+
+/*ブログ部分*/
+.fifth {
+  background: #dcdcdc;
+  height: 500px;
+}
+.blog-title {
+  margin: 20px 20px 20px 80px;
+}
+.blog-ttl1 {
+  font-size: 20px;
+  font-family: "Indie Flower", cursive;
+  color: #c71585;
+  margin: 20px 15px 10px 15px;
+  padding-top: 10px;
+}
+.blog-ttl2 {
+  font-size: 24px;
+  color: grey;
+  margin: 0 auto 20px 15px;
+}
+.blog-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.blog-card {
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+  width: 20%;
+}
+.blog-img img {
+  width: 100%;
+  position: relative;
+}
+.card-content {
+  padding: 15px 25px;
+  background: white;
+}
+.card-ttl {
+  font-size: 14px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.card-cat {
+  padding: 5px 10px;
+  background: #c71585;
+  position: absolute;
+  margin: -220px -20px auto -25px;
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  border-top-left-radius: 10px;
+}
+.card-tag {
+  font-size: 14px;
+  text-align: center;
+}
+.tag {
+  display: inline-block;
+  color: grey;
+}
+.date {
+  display: inline-block;
+  color: grey;
+  margin-right: 40px;
+}
+.blog-btn {
+  width: 200px;
+  height: 30px;
+  padding: 10px 0;
+  background: white;
+  color: #c71585;
+  border: 2px solid #c71585;
+  border-radius: 30px;
+  margin: 20px auto 10px auto;
+  display: block;
+}
+.blog-btn p {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+/*会社概要　部分*/
+.company-title {
+  margin-top: 20px;
+  margin-left: 400px;
+}
+.company-ttl1 {
+  font-size: 20px;
+  font-family: "Indie Flower", cursive;
+  color: #c71585;
+}
+.company-ttl2 {
+  font-size: 24px;
+  color: grey;
+  padding-top: 10px;
+}
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 30px auto 40px auto;
+}
+table th,
+table td {
+  border: 1px solid grey;
+  padding: 20px;
+}
+table th {
+  font-weight: bold;
+  background-color: #dcdcdc;
+  text-align: left;
+  width: 30%;
+  color: grey;
+}
+table td {
+  color: grey;
+}
+
+/*採用情報　インタビュー部分*/
+.seventh {
+  display: flex;
+}
+.pic-img1 {
+  position: relative;
+  background: url(../img/recruit.png) no-repeat center/cover;
+  height: 50vh;
+  width: 50vw;
+}
+.img1-ttl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+}
+.pic-img2 {
+  position: relative;
+  background: url(../img/interview.png) no-repeat center/cover;
+  height: 50vh;
+  width: 50vw;
+}
+.img2-ttl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+}
+
+/*お問い合わせ部分*/
+.contact {
+  text-align: center;
+  font: 20px;
+  font-weight: bold;
+  color: grey;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.line {
+  margin-left: auto;
+  margin-right: auto;
+  width: 2px;
+  height: 50px;
+  background-color: #c71585;
+}
+.contact-btn {
+  position: relative;
+  background: linear-gradient(90deg, #ff69b4, #db7093, #c71585);
+  width: 200px;
+  display: block;
+  padding: 18px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  margin: 50px auto;
+  box-shadow: 0 7px 0 #800080;
+}
+.contact-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  background: url(../img/mailicon.svg) no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  transform: translate(0, -50%);
+}
+
+/*フッター部分*/
+footer {
+  width: 100%;
+  height: 50px;
+  background: #dcdcdc;
+  display: flex;
+}
+.copyright {
+  color: grey;
+  font-size: 18px;
+  margin-left: 40%;
+  padding-top: 10px;
+}
